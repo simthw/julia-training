@@ -1,10 +1,13 @@
-# 这个文件被删除了
-function train()
-    println("Training...")
+# if-else statement 
+function fac(n)
+    if n > 2 # check if n >2
+        n * fac(n - 1)
+    elseif n > 0 # add condition check if n >0
+        return n
+    elseif n == 0 # add condition check if n == 0 
+        return 1
+    else
+        return err = DomainError(n, "`n` must not be negative")
+    end
 end
-# 随意修改了一下
-x = 1
-y = 3
-function ()
-    x + y
-end
+fac(5)
